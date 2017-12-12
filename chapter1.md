@@ -24,5 +24,7 @@ nginx的重新启动并不会使nginx主进程关闭（未验证）。
 
 nginx 生命周期post-read、server-rewrite、findconfig、rewrite、post-rewrite、preaccess、access、post-access、try-files、 content 以及 log
 
-post-read：执行的是解析请求头。非常有用的模块是ngx\_realip 防止ip攻击
+post-read：执行的是解析请求头。非常有用的模块是ngx\_realip 防止ip攻击。在前端中先把真实ip保存到请求头中。在后端的时候再去解析校验
+
+server-rewrite：简单的认为在server中配置的都是在server-rewrite阶段执行的
 
