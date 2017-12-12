@@ -22,5 +22,5 @@ nginx的重新启动并不会使nginx主进程关闭（未验证）。
 
 2017年12月12日 16:32:08
 
-nginx 生命周期post-read、server-rewrite、findconfig、rewrite、post-rewrite、preaccess、access、post-access、try-files、content 以及 log
+nginx 生命周期post-read、server-rewrite、findconfig、rewrite、post-rewrite、preaccess、access、post-access、try-files、 content 以及 log
 
