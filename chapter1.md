@@ -28,5 +28,5 @@ post-read：执行的是解析请求头。非常有用的模块是ngx\_realip �
 
 server-rewrite：简单的认为在server中配置的都是在server-rewrite阶段执行的
 
-find-config：（类似java中的dispatcher）匹配对应的location块
+find-config：（类似java中的dispatcher）匹配对应的location块。这个是ngix核心完成的
 
