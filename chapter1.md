@@ -30,3 +30,11 @@ server-rewrite：简单的认为在server中配置的都是在server-rewrite阶�
 
 find-config：（类似java中的dispatcher）匹配对应的location块。这个是ngix核心完成的
 
+
+
+
+
+
+
+
+
