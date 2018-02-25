@@ -4,25 +4,23 @@
 
 在生产者中引入自己的接口类（在接口中）
 
-
-
 ```
-
 public interface Barista {
-	@Input("orders")
-	SubscribableChannel orders();
+    @Input("orders")
+    SubscribableChannel orders();
 
-	@Output("hotDrinks")
-	MessageChannel hotDrinks();
+    @Output("hotDrinks")
+    MessageChannel hotDrinks();
 
-	@Output("coldDrinks")
-	MessageChannel coldDrinks();
+    @Output("coldDrinks")
+    MessageChannel coldDrinks();
 }
 ```
 
-
-
-@EnableBinding\(Barista.class\)
-
+```
+@EnableBinding(Barista.class)
 public class TimerSource {
+```
+
+
 
