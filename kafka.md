@@ -1,6 +1,8 @@
 2018年2月25日 11:50:30
 
-https://docs.spring.io/spring-cloud-stream/docs/Brooklyn.RELEASE/reference/htmlsingle/\#\_configuration\_options
+//参考文档
+
+[https://docs.spring.io/spring-cloud-stream/docs/Brooklyn.RELEASE/reference/htmlsingle/\#\_configuration\_options](https://docs.spring.io/spring-cloud-stream/docs/Brooklyn.RELEASE/reference/htmlsingle/#_configuration_options)
 
 使用spring.cloud.stream 包装的kafka。
 
