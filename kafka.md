@@ -30,5 +30,5 @@ public class TimerSource {
     public Map<String,String> timerMessageSourceTest() {
 ```
 
-消费者组一定要定义（这个能不能动态的根据接收消息方法定义）
+消费者组一定要定义。这个概念好像在应用中整体定义在最外面就行 这些应用属于这个topic的组
 
