@@ -22,6 +22,8 @@ public interface Barista {
 //在生产中引入接口类
 @EnableBinding(Barista.class)
 public class TimerSource {
+      @InboundChannelAdapter(value = "hotDrinks", poller = @Poller(fixedDelay = "1000", maxMessagesPerPoll = "1"))
+    public Map<String,String> timerMessageSourceTest() {
 ```
 
 
