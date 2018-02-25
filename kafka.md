@@ -1,5 +1,7 @@
 2018年2月25日 11:50:30
 
+https://docs.spring.io/spring-cloud-stream/docs/Brooklyn.RELEASE/reference/htmlsingle/\#\_configuration\_options
+
 使用spring.cloud.stream 包装的kafka。
 
 在生产者中引入自己的接口类（在接口中）
