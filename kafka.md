@@ -5,6 +5,7 @@
 在生产者中引入自己的接口类（在接口中）
 
 ```
+//引入自己的接口类定义kafka中的topic
 public interface Barista {
     @Input("orders")
     SubscribableChannel orders();
