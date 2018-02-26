@@ -75,6 +75,7 @@ public interface FHSocketChannel {
     SubscribableChannel fhCmsChannelInput();
 }
 
+//引入自定义channel
 @EnableBinding(FHSocketChannel.class)
 public class TimerSource {
     @InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, 
