@@ -40,9 +40,5 @@ public class TimerSource {
 
 spring cloud stream使用了组的概念（同kafka中组）。每个消费者都可绑定一个组通过spring.cloud.stream.bindings.&lt;channelName&gt;.group。
 
-
-
-所有
-
-
+所有订阅了topic的组都会得到一份发布数据的副本，但是只有组中一个订阅成员
 
