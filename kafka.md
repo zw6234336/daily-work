@@ -66,10 +66,21 @@ spring cloud stram 通过@EnableBinding 注解绑定触发。只需要在spring 
 
 ```
 public interface FHSocketChannel {
-	String FH_CMS_CHANNEL="fhCmsChannel";
-	@Input(FH_CMS_CHANNEL)
-	SubscribableChannel fhCmsChannelInput();
+    String FH_CMS_CHANNEL="fhCmsChannel";
+    @Input(FH_CMS_CHANNEL)
+    SubscribableChannel fhCmsChannelInput();
 }
+ 
+@InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, poller = @Poller(fixedDelay = "1000", maxMessagesPerPoll = "1"))
+public String timerMessageSourceTest() {
+    	ChatMessage messageModel = new ChatMessage();
+    	messageModel.setContents("测试内容");
+    	messageModel.setFrom("懒掌柜");
+    	messageModel.setTo("2017");
+    	messageModel.setTime(new Date().getTime());
+    	String aa = JSON.toJSONString(messageModel);
+        return aa;
+    }
 ```
 
 
