@@ -68,7 +68,7 @@ spring cloud stram 通过@EnableBinding 注解绑定触发。只需要在spring 
 public interface FHSocketChannel {
     String FH_CMS_CHANNEL="fhCmsChannel";
     @Output(FH_CMS_CHANNEL)
-    SubscribableChannel fhCmsChannelOutput();
+    MessageChannelfhCmsChannelOutput();
 }
 
 @InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, 
