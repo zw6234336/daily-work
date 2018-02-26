@@ -93,5 +93,5 @@ public class TimerSource {
 
 ## Connecting Multiple Application Instances（连接多个应用实例）
 
-对于微服务中既可以在程序中动态设置channel 也可以通过配置文件的形式设置chennel \(destination\)
+对于微服务中既可以在程序中动态设置channel 也可以通过配置文件的形式设置channel \(destination\)
 
