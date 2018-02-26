@@ -62,5 +62,7 @@ spring cloud提供一下几种转换类型支持。简单来说就是发布者�
 
 ## Declaring and Binding Channels（声明 绑定channel）
 
+spring cloud stram 通过@EnableBing 注解绑定触发。
+
 
 
