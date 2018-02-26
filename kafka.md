@@ -46,3 +46,19 @@ spring cloud stream使用了组的概念（同kafka中组）。每个消费者�
 
 spring cloud提供一下几种转换类型支持。简单来说就是发布者定义的消息类型（直接才java pojo的形式是不行的，类型中会记录对象全路径，消费者不能解析这样的消息类型），可以采用json形式方便两端解析（性能方面还没做测试那种最好）。
 
+```
+    @InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, poller = @Poller(fixedDelay = "1000", maxMessagesPerPoll = "1"))
+    public String timerMessageSourceTest() {
+    	
+    	ChatMessage messageModel = new ChatMessage();
+    	messageModel.setContents("测试内容");
+    	messageModel.setFrom("懒掌柜");
+    	messageModel.setTo("2017");
+    	messageModel.setTime(new Date().getTime());
+    	String aa = JSON.toJSONString(messageModel);
+        return aa;
+    }
+```
+
+
+
