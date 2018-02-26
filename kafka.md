@@ -69,15 +69,17 @@ public interface FHSocketChannel {
     String FH_CMS_CHANNEL="fhCmsChannel";
     @Output(FH_CMS_CHANNEL)
     MessageChannelfhCmsChannelOutput();
-    
+
     //input output同事出现是错误的
     @Input(FH_CMS_CHANNEL)
     SubscribableChannel fhCmsChannelInput();
 }
 
-@InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, 
-poller = @Poller(fixedDelay = "1000", maxMessagesPerPoll = "1"))
-public String timerMessageSourceTest() {
+@EnableBinding(FHSocketChannel.class)
+public class TimerSource {
+    @InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, 
+    poller = @Poller(fixedDelay = "1000", maxMessagesPerPoll = "1"))
+    public String timerMessageSourceTest() {
         ChatMessage messageModel = new ChatMessage();
         messageModel.setContents("测试内容");
         messageModel.setFrom("懒掌柜");
