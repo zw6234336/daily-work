@@ -60,7 +60,7 @@ spring cloud提供一下几种转换类型支持。简单来说就是发布者�
     }
 ```
 
-## Declaring and Binding Channels
+## Declaring and Binding Channels（声明 绑定channel）
 
 
 
