@@ -93,5 +93,5 @@ public class TimerSource {
 
 ## Connecting Multiple Application Instances（连接多个应用实例）
 
-cloud stream典型的脚本应用是创建一个多应用的pipline
+cloud stream典型的脚本是创建一个多应用的pipline
 
