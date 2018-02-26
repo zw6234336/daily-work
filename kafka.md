@@ -69,6 +69,10 @@ public interface FHSocketChannel {
     String FH_CMS_CHANNEL="fhCmsChannel";
     @Output(FH_CMS_CHANNEL)
     MessageChannelfhCmsChannelOutput();
+    
+    //input output同事出现是错误的
+    @Input(FH_CMS_CHANNEL)
+    SubscribableChannel fhCmsChannelInput();
 }
 
 @InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, 
