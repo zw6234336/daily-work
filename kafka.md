@@ -62,7 +62,7 @@ spring cloud提供一下几种转换类型支持。简单来说就是发布者�
 
 ## Declaring and Binding Channels（声明 绑定channel）
 
-spring cloud stram 通过@EnableBinding 注解绑定触发。只需要在spring boot中加入 注解即可使用 spring.cloud.stream。@EnableBinding 注解中已经包含@Configuration 等注解。表示channel的接口方法可以作为参数放在@EnableBinding中。注意在生产者中一个channel只能定义一个
+spring cloud stram 通过@EnableBinding 注解绑定触发。只需要在spring boot中加入 注解即可使用 spring.cloud.stream。@EnableBinding 注解中已经包含@Configuration 等注解。表示channel的接口方法可以作为参数放在@EnableBinding中。注意在生产者中一个channel只能定义一个@Output\(channel名称\)注解，不能再次定义@Input\(channel名称\)
 
 ```
 public interface FHSocketChannel {
