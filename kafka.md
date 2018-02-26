@@ -38,13 +38,11 @@ public class TimerSource {
 
 通过分享topic的方式更方便的连接应用，我们可以在同一组中创建多个应用实例，但是每个实例都是竞争关系，一个消息只能被一个实例处理。
 
-spring cloud stream使用了组的概念（同kafka中组）。每个消费者都可绑定一个组通过
+spring cloud stream使用了组的概念（同kafka中组）。每个消费者都可绑定一个组通过spring.cloud.stream.bindings.&lt;channelName&gt;.group。
 
-```
-spring.cloud.stream.bindings.<channelName>.group
-```
 
-### 
+
+所有
 
 
 
