@@ -70,15 +70,16 @@ public interface FHSocketChannel {
     @Input(FH_CMS_CHANNEL)
     SubscribableChannel fhCmsChannelInput();
 }
- 
-@InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, poller = @Poller(fixedDelay = "1000", maxMessagesPerPoll = "1"))
+
+@InboundChannelAdapter(value =FHSocketChannel.FH_CMS_CHANNEL, 
+poller = @Poller(fixedDelay = "1000", maxMessagesPerPoll = "1"))
 public String timerMessageSourceTest() {
-    	ChatMessage messageModel = new ChatMessage();
-    	messageModel.setContents("测试内容");
-    	messageModel.setFrom("懒掌柜");
-    	messageModel.setTo("2017");
-    	messageModel.setTime(new Date().getTime());
-    	String aa = JSON.toJSONString(messageModel);
+        ChatMessage messageModel = new ChatMessage();
+        messageModel.setContents("测试内容");
+        messageModel.setFrom("懒掌柜");
+        messageModel.setTo("2017");
+        messageModel.setTime(new Date().getTime());
+        String aa = JSON.toJSONString(messageModel);
         return aa;
     }
 ```
