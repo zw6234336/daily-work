@@ -63,13 +63,17 @@ private String userEmail;
 
 注意别名的写法。当然上面的写法也可以使用resultMap来写，并且resultMap是支持继承的可以自定义resultMap继承基础resultMap简化写法
 
-
-
 ### 缓存
 
 一级缓存默认开启
 
+```
+SysUser model = dao.selectById(1);
+model.setName("zhangsan");
+SysUser model2 = dao.selectById(1);
+model2.getName();值也为zhangsan
 
+```
 
 
 
