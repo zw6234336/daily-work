@@ -33,7 +33,7 @@ id in\(\) 使用${ids}不安全的可能发生sql注入。一定要使用\#{}。
 
 ```
 List<SysUser> selectByIdList(List<Long> idList)
-<foreach collection="List" open="(" close=")" separator="'" item="id" index="id"> 
+<foreach collection="List" open="(" close=")" separator="'" item="id" index="i"> 
     #{id}
 ```
 
