@@ -47,3 +47,5 @@ foreach也可以用于批量插入操作
 
 ![](/assets/import.png)
 
+### 链表复杂查询
+
