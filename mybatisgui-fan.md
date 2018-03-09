@@ -27,3 +27,5 @@ test是一个OGNL表达式这个表达式的结果可以是 true false,初次之
 
 choose 相当于if else
 
+where 帮我们做了一些sql语句拼写错误自动整理的功能、set同样功能
+
