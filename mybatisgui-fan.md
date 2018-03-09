@@ -51,7 +51,14 @@ foreach也可以用于批量插入操作
 
 只是记个写法规则方便以后大家使用
 
+1. 多model联合查询
 
+```
+private SysRole role;
+private String name;
+private SysUser user;
+```
 
+1. 
 
 
