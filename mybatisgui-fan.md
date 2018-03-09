@@ -56,7 +56,7 @@ foreach也可以用于批量插入操作
 ```
 private SysRole role;
 private String userName;
-private SysUser user;
+private String userEmail;
 ```
 
 1. 
