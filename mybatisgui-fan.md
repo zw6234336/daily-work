@@ -32,6 +32,7 @@ where 帮我们做了一些sql语句拼写错误自动整理的功能、set同�
 id in\(\) 使用${ids}不安全的可能发生sql注入。一定要使用\#{}。foreach最终会全部转换成list来处理
 
 ```
+List<SysUser> selectByIdList(List<Long> idList)
 <foreach collection="List" open="(" close=")" separator="'" item="id" index="id"> 
     #{id}
 ```
