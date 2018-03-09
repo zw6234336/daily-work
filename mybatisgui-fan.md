@@ -19,7 +19,9 @@ List<SysRole> selectRolesByUserIdAndRoleAble(@Param（"userId"）Long userId,@Pa
 
 ### 动态SQl
 
-
+```
+<if test="userName !=null and userName !=''">
+```
 
 
 
