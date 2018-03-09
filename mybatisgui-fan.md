@@ -65,6 +65,10 @@ private String userEmail;
 
 ### 缓存
 
+非常完整的测试说明
+
+[https://tech.meituan.com/mybatis\_cache.html](https://tech.meituan.com/mybatis_cache.html)
+
 一级缓存默认开启
 
 ```
