@@ -37,5 +37,7 @@ List<SysUser> selectByIdList(List<Long> idList)
     #{id}
 ```
 
+collection 必填，值是要迭代循环的属性名，属性值可能有很多。
 
+iteam 变量名 从迭代对象中去除的每一个值
 
