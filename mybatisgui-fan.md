@@ -74,5 +74,5 @@ SysUser model2 = dao.selectById(1);
 model2.getName();值也为zhangsan
 ```
 
-通过日志可以看到当前两次数据库查询只是执行了一次。在同一个sqlsession生命周期内，Mybatis会把方法和参数统计过计算存入Map中。当方法和参数完全相同时通过计算就会得到缓存中Map的值。所以必须禁止在原对象进行修改操作。
+通过日志可以看到当前两次数据库查询只是执行了一次。在同一个sqlsession生命周期内，Mybatis会把方法和参数统计过计算存入Map中。当方法和参数完全相同时通过计算就会得到缓存中Map的值。所以必须禁止在原对象进行修改操作。insert、update、delete会更新一级缓存
 
