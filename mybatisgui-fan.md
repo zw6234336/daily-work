@@ -1,8 +1,8 @@
-insetr规范
+### insetr规范
 
 使用userGenerateKeys=true 使用数据库内部生成的id返回给字段 keyProperty="id" 作为新增语句返回值
 
-多接口参数
+### 多接口参数
 
 ```
 List<SysRole> selectRolesByUserIdAndRoleAble(Long userId,Integer enable)
@@ -17,5 +17,5 @@ List<SysRole> selectRolesByUserIdAndRoleAble(Long userId,Integer enable)
 List<SysRole> selectRolesByUserIdAndRoleAble(@Param（"userId"）Long userId,@Param(enable) Integer enable)
 ```
 
-
+动态SQl
 
