@@ -23,5 +23,5 @@ List<SysRole> selectRolesByUserIdAndRoleAble(@Param（"userId"）Long userId,@Pa
 <if test="userName !=null and userName !=''">
 ```
 
-
+test是一个OGNL表达式
 
