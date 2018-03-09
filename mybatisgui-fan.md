@@ -72,8 +72,7 @@ SysUser model = dao.selectById(1);
 model.setName("zhangsan");
 SysUser model2 = dao.selectById(1);
 model2.getName();值也为zhangsan
-
 ```
 
-
+通过日志可以看到当前两次数据库查询只是执行了一次
 
