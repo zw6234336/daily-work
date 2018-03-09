@@ -45,3 +45,5 @@ index 索引的属性名，当循环对象是Map时 这个值为Map的key键值
 
 foreach也可以用于批量插入操作
 
+![](/assets/import.png)
+
