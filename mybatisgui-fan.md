@@ -23,5 +23,5 @@ List<SysRole> selectRolesByUserIdAndRoleAble(@Param（"userId"）Long userId,@Pa
 <if test="userName !=null and userName !=''">
 ```
 
-test是一个OGNL表达式
+test是一个OGNL表达式这个表达式的结果可以是 true false,初次之外所有的非0值都是true.只有0是false
 
