@@ -29,3 +29,5 @@ choose 相当于if else
 
 where 帮我们做了一些sql语句拼写错误自动整理的功能、set同样功能
 
+ id in\(\) 使用${ids}不安全的可能发生sql注入。一定要使用\#{}。foreach最终会全部转换成list来处理
+
